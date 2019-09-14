@@ -10,6 +10,9 @@
 		B796FD61232D446E0024BB06 /* NetworkDebuggingTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B796FD57232D446E0024BB06 /* NetworkDebuggingTool.framework */; };
 		B796FD68232D446E0024BB06 /* NetworkDebuggingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B796FDA7232D49620024BB06 /* NetworkDebuggingToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */; };
+		B796FDAC232D50D60024BB06 /* NetworkDebugSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */; };
+		B796FDAE232D51730024BB06 /* NetworkDebugSchemaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */; };
+		B796FDB0232D53DA0024BB06 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B796FDAF232D53DA0024BB06 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		B796FD60232D446E0024BB06 /* NetworkDebuggingToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkDebuggingToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B796FDA5232D49620024BB06 /* NetworkDebuggingToolTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkDebuggingToolTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebuggingToolTests.swift; sourceTree = "<group>"; };
+		B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDebugSchema.swift; sourceTree = "<group>"; };
+		B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugSchemaSpec.swift; sourceTree = "<group>"; };
+		B796FDAF232D53DA0024BB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			children = (
 				B796FD5B232D446E0024BB06 /* Info.plist */,
 				B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */,
+				B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -82,6 +89,8 @@
 			children = (
 				B796FDA5232D49620024BB06 /* NetworkDebuggingToolTests-Bridging-Header.h */,
 				B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */,
+				B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */,
+				B796FDAF232D53DA0024BB06 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					B796FD56232D446E0024BB06 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					B796FD5F232D446E0024BB06 = {
 						CreatedOnToolsVersion = 10.3;
@@ -178,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B796FDB0232D53DA0024BB06 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B796FDAC232D50D60024BB06 /* NetworkDebugSchema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B796FDAE232D51730024BB06 /* NetworkDebugSchemaSpec.swift in Sources */,
 				B796FDA7232D49620024BB06 /* NetworkDebuggingToolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +355,7 @@
 		B796FD6C232D446E0024BB06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -360,6 +374,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,6 +383,7 @@
 		B796FD6D232D446E0024BB06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -394,6 +410,7 @@
 		B796FD6F232D446E0024BB06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -414,6 +431,7 @@
 		B796FD70232D446E0024BB06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
