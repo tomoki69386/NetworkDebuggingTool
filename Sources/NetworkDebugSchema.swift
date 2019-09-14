@@ -38,6 +38,10 @@ public struct NetworkDebugSchema {
         return string
     }
     
+    var url: URL? {
+        return request.url
+    }
+    
     var date: String {
         dateFormatter.dateFormat = dateFormatString
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
