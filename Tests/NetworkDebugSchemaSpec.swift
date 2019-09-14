@@ -11,15 +11,29 @@ import NetworkDebuggingTool
 
 class NetworkDebugSchemaSpec: XCTestCase {
     var schema: NetworkDebugSchema {
-        let request = URLRequest(url: URL(string: "https://github.com")!)
+        var urlComponents = URLComponents(string: "http://twitter.com/tomoki_sun")!
+        urlComponents.queryItems = [URLQueryItem(name: "page", value: "1")]
+        let request = URLRequest(url: urlComponents.url!)
         return NetworkDebugSchema(nil, request: request, data: nil, error: nil)
     }
     
     func testRequestURL() {
-        var url = URL(string: "https://github.com")
+        let url = URL(string: "http://twitter.com/tomoki_sun?page=1")
         XCTAssertEqual(url, schema.url)
-        
-        url = nil
-        XCTAssertNotEqual(url, schema.url)
+    }
+    
+    func testRequestURLHost() {
+        let host: String? = "twitter.com"
+        XCTAssertEqual(host, schema.url?.host)
+    }
+    
+    func testRequestURLPath() {
+        let path: String? = "/tomoki_sun"
+        XCTAssertEqual(path, schema.url?.path)
+    }
+    
+    func testRequestURLQuery() {
+        let query = "page=1"
+        XCTAssertEqual(query, schema.url?.query)
     }
 }
