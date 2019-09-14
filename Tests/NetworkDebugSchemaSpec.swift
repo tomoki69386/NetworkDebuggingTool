@@ -23,17 +23,22 @@ class NetworkDebugSchemaSpec: XCTestCase {
     }
     
     func testRequestURLHost() {
-        let host: String? = "twitter.com"
-        XCTAssertEqual(host, schema.url?.host)
+        XCTAssertEqual("twitter.com", schema.url?.host)
     }
     
     func testRequestURLPath() {
-        let path: String? = "/tomoki_sun"
-        XCTAssertEqual(path, schema.url?.path)
+        XCTAssertEqual("/tomoki_sun", schema.url?.path)
     }
     
     func testRequestURLQuery() {
-        let query = "page=1"
-        XCTAssertEqual(query, schema.url?.query)
+        XCTAssertEqual("page=1", schema.url?.query)
+    }
+    
+    func testRequestBody() {
+        XCTAssertEqual("No request body", schema.requestBody)
+    }
+    
+    func testResponseBody() {
+        XCTAssertEqual("No response body", schema.responseBody)
     }
 }

@@ -8,6 +8,8 @@
 
 import Foundation
 
+var networkDebugSchemas: [NetworkDebugSchema] = []
+
 public struct NetworkDebugSchema {
     public var response: HTTPURLResponse?
     public var request: URLRequest
