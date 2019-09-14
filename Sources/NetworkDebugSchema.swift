@@ -16,6 +16,7 @@ public struct NetworkDebugSchema {
     
     fileprivate let dateFormatString = "yyyy/MM/dd HH:mm:ss"
     fileprivate let dateFormatter = DateFormatter()
+    private let date = Date()
     
     public init(_ response: URLResponse?, request: URLRequest, data: Data?, error: Swift.Error?) {
         self.response = response as? HTTPURLResponse
@@ -42,9 +43,9 @@ public struct NetworkDebugSchema {
         return request.url
     }
     
-    public var date: String {
+    public var dateString: String {
         dateFormatter.dateFormat = dateFormatString
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        return dateFormatter.string(from: Date())
+        return dateFormatter.string(from: date)
     }
 }
