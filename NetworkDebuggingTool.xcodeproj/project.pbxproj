@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B796FD61232D446E0024BB06 /* NetworkDebuggingTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B796FD57232D446E0024BB06 /* NetworkDebuggingTool.framework */; };
-		B796FD66232D446E0024BB06 /* NetworkDebuggingToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FD65232D446E0024BB06 /* NetworkDebuggingToolTests.swift */; };
 		B796FD68232D446E0024BB06 /* NetworkDebuggingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B796FDA7232D49620024BB06 /* NetworkDebuggingToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +27,8 @@
 		B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkDebuggingTool.h; sourceTree = "<group>"; };
 		B796FD5B232D446E0024BB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B796FD60232D446E0024BB06 /* NetworkDebuggingToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkDebuggingToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B796FD65232D446E0024BB06 /* NetworkDebuggingToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebuggingToolTests.swift; sourceTree = "<group>"; };
-		B796FD67232D446E0024BB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B796FDA5232D49620024BB06 /* NetworkDebuggingToolTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkDebuggingToolTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebuggingToolTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,17 +74,15 @@
 				B796FD5B232D446E0024BB06 /* Info.plist */,
 				B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
 		B796FD90232D46BD0024BB06 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B796FD67232D446E0024BB06 /* Info.plist */,
-				B796FD65232D446E0024BB06 /* NetworkDebuggingToolTests.swift */,
+				B796FDA5232D49620024BB06 /* NetworkDebuggingToolTests-Bridging-Header.h */,
+				B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */,
 			);
-			name = Tests;
 			path = Tests;
 			sourceTree = "<group>";
 		};
@@ -153,6 +151,7 @@
 					};
 					B796FD5F232D446E0024BB06 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -203,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B796FD66232D446E0024BB06 /* NetworkDebuggingToolTests.swift in Sources */,
+				B796FDA7232D49620024BB06 /* NetworkDebuggingToolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +394,7 @@
 		B796FD6F232D446E0024BB06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +404,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki-sun.NetworkDebuggingToolTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/NetworkDebuggingToolTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -412,6 +414,7 @@
 		B796FD70232D446E0024BB06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,6 +424,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tomoki-sun.NetworkDebuggingToolTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/NetworkDebuggingToolTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

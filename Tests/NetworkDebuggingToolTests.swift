@@ -1,12 +1,13 @@
 //
 //  NetworkDebuggingToolTests.swift
-//  Demo
+//  NetworkDebuggingToolTests
 //
-//  Created by 築山朋紀 on 2019/09/15.
-//  Copyright © 2019 tomoki_sun. All rights reserved.
+//  Created by tomoki69386 on 2019/09/15.
+//  Copyright © 2019 tomoki69386. All rights reserved.
 //
 
 import XCTest
+import NetworkDebuggingTool
 
 class NetworkDebuggingToolTests: XCTestCase {
 
