@@ -82,10 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				B796FD5B232D446E0024BB06 /* Info.plist */,
-				B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */,
-				B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */,
-				B7E6FA07232D596200450254 /* NetworkDebugMenuViewController.swift */,
 				B7E6FA09232D599600450254 /* NetworkDebugMenuDataSource.swift */,
+				B7E6FA07232D596200450254 /* NetworkDebugMenuViewController.swift */,
+				B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */,
+				B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -93,10 +93,10 @@
 		B796FD90232D46BD0024BB06 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B796FDAF232D53DA0024BB06 /* Info.plist */,
+				B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */,
 				B796FDA5232D49620024BB06 /* NetworkDebuggingToolTests-Bridging-Header.h */,
 				B796FDA6232D49620024BB06 /* NetworkDebuggingToolTests.swift */,
-				B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */,
-				B796FDAF232D53DA0024BB06 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
