@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        var schema: NetworkDebugSchema {
+            var urlComponents = URLComponents(string: "http://twitter.com/tomoki_sun")!
+            urlComponents.queryItems = [URLQueryItem(name: "page", value: "1")]
+            let request = URLRequest(url: urlComponents.url!)
+            return NetworkDebugSchema(nil, request: request, data: nil, error: nil)
+        }
+        networkDebugSchemas += [schema, schema, schema, schema, schema]
+        self.window?.rootViewController = NetworkDebugMenuViewController.make()
+        self.window?.makeKeyAndVisible()
         return true
     }
 

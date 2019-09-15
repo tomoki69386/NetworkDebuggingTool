@@ -14,6 +14,8 @@
 		B796FD88232D462A0024BB06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B796FD86232D462A0024BB06 /* LaunchScreen.storyboard */; };
 		B796FDA1232D48D50024BB06 /* NetworkDebugSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FD9E232D48D50024BB06 /* NetworkDebugSchema.swift */; };
 		B796FDA2232D48D50024BB06 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B796FD9F232D48D50024BB06 /* Info.plist */; };
+		B7E6FA0D232D5DDE00450254 /* NetworkDebugMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E6FA0B232D5DDE00450254 /* NetworkDebugMenuDataSource.swift */; };
+		B7E6FA0E232D5DDE00450254 /* NetworkDebugMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E6FA0C232D5DDE00450254 /* NetworkDebugMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		B796FD9E232D48D50024BB06 /* NetworkDebugSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDebugSchema.swift; path = ../Sources/NetworkDebugSchema.swift; sourceTree = "<group>"; };
 		B796FD9F232D48D50024BB06 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Sources/Info.plist; sourceTree = "<group>"; };
 		B796FDA0232D48D50024BB06 /* NetworkDebuggingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkDebuggingTool.h; path = ../Sources/NetworkDebuggingTool.h; sourceTree = "<group>"; };
+		B7E6FA0B232D5DDE00450254 /* NetworkDebugMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDebugMenuDataSource.swift; path = ../Sources/NetworkDebugMenuDataSource.swift; sourceTree = "<group>"; };
+		B7E6FA0C232D5DDE00450254 /* NetworkDebugMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDebugMenuViewController.swift; path = ../Sources/NetworkDebugMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				B796FD9F232D48D50024BB06 /* Info.plist */,
 				B796FDA0232D48D50024BB06 /* NetworkDebuggingTool.h */,
 				B796FD9E232D48D50024BB06 /* NetworkDebugSchema.swift */,
+				B7E6FA0B232D5DDE00450254 /* NetworkDebugMenuDataSource.swift */,
+				B7E6FA0C232D5DDE00450254 /* NetworkDebugMenuViewController.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E6FA0D232D5DDE00450254 /* NetworkDebugMenuDataSource.swift in Sources */,
 				B796FDA1232D48D50024BB06 /* NetworkDebugSchema.swift in Sources */,
+				B7E6FA0E232D5DDE00450254 /* NetworkDebugMenuViewController.swift in Sources */,
 				B796FD80232D46290024BB06 /* ViewController.swift in Sources */,
 				B796FD7E232D46290024BB06 /* AppDelegate.swift in Sources */,
 			);

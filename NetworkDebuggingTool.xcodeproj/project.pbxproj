@@ -13,6 +13,8 @@
 		B796FDAC232D50D60024BB06 /* NetworkDebugSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */; };
 		B796FDAE232D51730024BB06 /* NetworkDebugSchemaSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */; };
 		B796FDB0232D53DA0024BB06 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B796FDAF232D53DA0024BB06 /* Info.plist */; };
+		B7E6FA08232D596300450254 /* NetworkDebugMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E6FA07232D596200450254 /* NetworkDebugMenuViewController.swift */; };
+		B7E6FA0A232D599600450254 /* NetworkDebugMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E6FA09232D599600450254 /* NetworkDebugMenuDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDebugSchema.swift; sourceTree = "<group>"; };
 		B796FDAD232D51730024BB06 /* NetworkDebugSchemaSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugSchemaSpec.swift; sourceTree = "<group>"; };
 		B796FDAF232D53DA0024BB06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E6FA07232D596200450254 /* NetworkDebugMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugMenuViewController.swift; sourceTree = "<group>"; };
+		B7E6FA09232D599600450254 /* NetworkDebugMenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDebugMenuDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				B796FD5B232D446E0024BB06 /* Info.plist */,
 				B796FD5A232D446E0024BB06 /* NetworkDebuggingTool.h */,
 				B796FDAB232D50D60024BB06 /* NetworkDebugSchema.swift */,
+				B7E6FA07232D596200450254 /* NetworkDebugMenuViewController.swift */,
+				B7E6FA09232D599600450254 /* NetworkDebugMenuDataSource.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B796FDAC232D50D60024BB06 /* NetworkDebugSchema.swift in Sources */,
+				B7E6FA08232D596300450254 /* NetworkDebugMenuViewController.swift in Sources */,
+				B7E6FA0A232D599600450254 /* NetworkDebugMenuDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
